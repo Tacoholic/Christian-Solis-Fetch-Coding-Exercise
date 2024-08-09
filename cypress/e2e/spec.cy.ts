@@ -1,9 +1,9 @@
 import { GamePage } from '../pages/game-page.page';
 
-describe('template spec', () => {
+describe('Fetch SDET Coding Exercise ', () => {
   const gamePage = new GamePage();
 
-  it('passes', () => {
+  it('Checks the values of each bar to determine if one is heavier than the other or if they weigh the same', () => {
     cy.visit('/');
     //Checks for correct URL path
     cy.url().should('contain', 'http://sdetchallenge.fetch.com/');
