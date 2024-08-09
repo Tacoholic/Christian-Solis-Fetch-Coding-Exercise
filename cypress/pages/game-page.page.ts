@@ -27,8 +27,7 @@ export class GamePage {
     cy.get('#left_0').clear().type(num1);
     cy.get('#right_0').clear().type(num2);
     cy.get('#weigh').click();
-    //Tried passing a timeout command on line 13 instead
-    //of a wait command, but getting the result to display is slow
+    //Tried passing a timeout command instead of a wait, but that wasn't working
     cy.wait(3000);
     cy.get('.result > #reset')
       .invoke('removeAttr', 'disabled')
